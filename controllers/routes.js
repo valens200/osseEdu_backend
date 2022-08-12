@@ -59,7 +59,7 @@ router.post('/email', async (req, res) => {
     })
     const mailOptions = {
       from: email,
-      to: 'uwavalens2003@gmail.com',
+      to: 'ntwaliosee2@gmail.com',
       subject: subject,
       text: text,
     }
@@ -138,6 +138,7 @@ router.delete('/delete', async (req, res) => {
 
 router.post('/login', async (req, res) => {
   const { Email, Password } = req.body
+  console.log(req.body)
   if (!Email || !Password || Email == '' || Password == '') {
     return res
       .status(400)
