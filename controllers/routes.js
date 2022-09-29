@@ -26,6 +26,10 @@ router.get('/', (req, res) => {
   res.status(200).send('hello, wellcome here')
 })
 
+
+router.get("/", async(req, res) => {
+  return res.status(200).send("Hello, wellcome to osee-Edu")
+})
 router.post('/email', async (req, res) => {
   try {
     const { email, subject, text } = req.body
