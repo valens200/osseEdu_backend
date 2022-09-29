@@ -17,7 +17,7 @@ app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(routers)
-const PORT = 4000 || process.env.PORT
+const PORT = process.env.PORT;
 connection()
 
 app.listen(PORT, () => {
