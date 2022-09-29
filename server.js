@@ -9,7 +9,7 @@ const connection = require('./models/database/connection')
 
 app.use(
   cors({
-    origin: 'https://osee-edu.vercel.app/',
+    origin: 'https://osee-edu.vercel.app',
     methods: ['POST', 'GET', 'DELETE'],
   }),
 )
